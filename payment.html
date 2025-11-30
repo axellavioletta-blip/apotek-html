@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Administrasi Pembayaran</title>
+
+    <style>
+        /* KOTAK FORM */
+        .box {
+            background: white;
+            width: 300px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #0005;
+        }
+
+        /* INPUT */
+        input, select {
+            width: 90%;
+            padding: 8px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+        }
+
+        /* TOMBOL */
+        button {
+            padding: 8px 15px;
+            border-radius: 5px;
+            border: none;
+            background: #2da8ff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #007ad9;
+            transition: 0.2s;
+        }
+    </style>
+</head>
+
+<body background="apoteker.jpg">
+
+    <center>
+
+        <!-- LOGO -->
+        <img src="logoapotek.jpg" width="120">
+
+        <h2>Administrasi Pembayaran</h2>
+
+        <!-- KOTAK FORM PEMBAYARAN -->
+        <div class="box">
+
+            <!-- NAMA -->
+            <label>Nama Pembeli:</label><br>
+            <input type="text" id="nama">
+
+            <!-- PILIH OBAT -->
+            <label>Pilih Obat:</label><br>
+            <select id="obat">
+                <option value="20000">Obat Batuk — Rp 20.000</option>
+                <option value="20000">Obat Pilek — Rp 20.000</option>
+                <option value="20000">Obat Demam — Rp 20.000</option>
+                <option value="20000">Tolak Angin — Rp 15.000</option>
+            </select>
+
+            <!-- JUMLAH -->
+            <label>Jumlah:</label><br>
+            <input type="number" id="jumlah" value="1">
+
+            <!-- TOMBOL HITUNG -->
+            <button onclick="hitung()">Hitung Total</button>
+
+            <!-- HASIL -->
+            <p id="hasil"></p>
+
+            <img src="gopay.jpg" width="130" class="logo fade">
+
+        </div>
+
+        <br>
+
+        <!-- TOMBOL BALIK -->
+        <a href="apotek.html"><button>Kembali ke Home</button></a>
+    </center>
+
+
+    <!-- FUNGSI JS SIMPLE -->
+    <script>
+        function hitung() {
+            let harga = document.getElementById("obat").value;
+            let jumlah = document.getElementById("jumlah").value;
+            let total = harga * jumlah;
+
+            document.getElementById("hasil").innerHTML =
+                "Total Pembayaran: Rp " + total.toLocaleString();
+        }
+    </script>
+
+</body>
+</html>

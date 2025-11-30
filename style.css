@@ -1,0 +1,54 @@
+body { 
+    margin: 0; /* Hilangkan margin default */
+    font-family: Arial; /* Font utama */
+    text-align: center; /* Teks rata tengah */
+    background-color: #f2f2f2; /* Warna background */
+}
+
+.header {
+    background-color: #4CAF50; /* Warna hijau header */
+    color: white; /* Warna teks putih */
+    padding: 20px; /* Jarak dalam */
+}
+
+.menu {
+    margin-top: 30px; /* Jarak dari atas */
+}
+
+.btn {
+    display: inline-block; /* Supaya bisa diberi padding */
+    padding: 12px 20px; /* Ukuran tombol */
+    background-color: #4CAF50; /* Warna hijau */
+    color: white; /* Warna teks */
+    text-decoration: none; /* Hilangkan garis bawah */
+    border-radius: 8px; /* Membuat tombol melengkung */
+    margin: 10px; /* Jarak antar tombol */
+}
+
+.footer {
+    margin-top: 40px; /* Jarak dari konten atas */
+    background: #333; /* Latar gelap */
+    color: white; /* Warna teks */
+    padding: 10px; /* Jarak dalam */
+}
+
+.bg {
+    width: 90%; /* Lebar gambar bg */
+    margin-top: 20px; /* Jarak dari atas */
+    border-radius: 10px; /* Membuat sudut melengkung */
+}
+
+.logo {
+    width: 150px; /* Lebar logo */
+    margin: 20px auto; /* Tengah secara horizontal */
+    display: block; /* Biar bisa auto margin */
+}
+
+.box {
+    background: white; /* Latar putih */
+    width: 300px; /* Lebar kotak */
+    margin: 20px auto; /* Tengah halaman */
+    padding: 15px; /* Jarak dalam */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0px 0px 10px #888; /* Bayangan halus */
+}

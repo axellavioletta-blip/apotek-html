@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Apotek</title>
+
+    <style>
+        /* ANIMASI FADE IN */
+        .fade {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* KOTAK BACKGROUND APOTEK BESAR DI KIRI */
+        .bg-left {
+            position: absolute;
+            left: 70px;
+            top: 180px;      /* DIKASIH JARAK SUPAYA ADA TEMPAT BUAT LOGO */
+        }
+
+        /* MEMPERBESAR GAMBAR */
+        .bg-left img {
+            width: 350px;     /* PERBESAR DI SINI */
+            border-radius: 10px;
+            box-shadow: 0 0 10px #0005;
+        }
+
+        /* LOGO DI ATAS (ADA SLOT KHUSUS) */
+        .logo {
+            margin-top: 20px;
+        }
+
+        /* TOMBOL DI KANAN */
+        .menu {
+            position: absolute;
+            right: 70px;
+            top: 180px;
+            text-align: right;
+        }
+
+        /* TOMBOL KECIL */
+        .btn {
+            display: inline-block;
+            background: #2da8ff;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin: 5px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+        .btn:hover {
+            background: #007ad9;
+            transition: 0.3s;
+        }
+
+        body {
+            font-family: Arial;
+        }
+    </style>
+</head>
+
+<body class="fade">
+
+    <!-- LOGO DI SLOT ATAS -->
+    <center>
+        <img src="logoapotek.jpg" width="130" class="logo fade">
+        <h2 class="fade">Selamat Datang di Apotek</h2>
+    </center>
+
+    <!-- BACKGROUND APOTEK BESAR DI KIRI -->
+    <div class="bg-center fade" width= 1600>
+        <img src="apoteker.jpg">
+    </div>
+
+    <!-- MENU TOMBOL DI KANAN -->
+    <div class="menu fade">
+        <a href="catalog.html" class="btn">Catalog</a>
+        <a href="payment.html" class="btn">Pembayaran</a>
+         <a href="layanan.html" class="btn">layanan</a>
+    </div>
+
+</body>
+</html>
